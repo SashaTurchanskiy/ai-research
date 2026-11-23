@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ai-research
+
+  datasource:
+    url: jdbc:mysql://localhost:3308/ai_research
+    username: ai_research
+    password: ai_research
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+      hibernate:
+        ddl-auto: update
+      open-in-view: false
+      properties:
+        hibernate:
+          jdbc:
+            time_zone: UTC
+
+server:
+  port: 5000
